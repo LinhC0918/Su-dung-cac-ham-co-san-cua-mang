@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 3</title>
+</head>
+<body>
+    <script>
+        var string = prompt('Enter the string').toString();
+        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        var result = [];
+        for (var x = 0; x < string.length; x++){
+            if (UPPER.indexOf(string[x]) !== -1){
+                result.push(string[x].toLowerCase());
+            }
+            else if (LOWER.indexOf(string[x]) !== -1){
+                result.push(string[x].toUpperCase());
+            }
+            else
+                result.push(string[x]);
+        }
+        alert(result.join(''));
+    </script>
+</body>
+</html>
